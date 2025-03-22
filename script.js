@@ -34,8 +34,10 @@ function calculateCGPA() {
 
 
     const sgpa = totalGradePoints / totalCredits;
+    const perc = ((sgpa * 10)-4.5);
     document.getElementById('sgpa').innerText = sgpa.toFixed(2);
     document.getElementById('cgpa').innerText = sgpa.toFixed(2);
+    document.getElementById('per').innerText = perc.toFixed(2);
 
 const messageElement = document.getElementById('funnyMessage');
     if (sgpa >= 9) {
