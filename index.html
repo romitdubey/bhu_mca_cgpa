@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>BHU MCA 1st Sem CGPA Calculator</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Credits</th>
+                    <th>Theory Marks (Out Of 100)</th>
+                    <th>Practical Marks (Out Of 100)</th>
+                    <th>Grade Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>DSA</td>
+                    <td>6</td>
+                    <td><input type="number" id="marks1" min="0" max="100"></td>
+                    <td><input type="number" id="marks2" min="0" max="100"></td>
+                    <td id="gradePoints1"></td>
+                </tr>
+                <tr>
+                    <td>Oops Theory</td>
+                    <td>5</td>
+                    <td><input type="number" id="marks3" min="0" max="100"></td>
+                    <td><input type="number" id="marks4" min="0" max="100"></td>
+                    <td id="gradePoints2"></td>
+                </tr>
+                <tr>
+                    <td>Software Engineering</td>
+                    <td>3</td>
+                    <td><input type="number" id="marks5" min="0" max="100"></td>
+                    <td></td>
+                    <td id="gradePoints3"></td>
+                </tr>
+                <tr>
+                    <td>Computer Network</td>
+                    <td>4</td>
+                    <td><input type="number" id="marks6" min="0" max="100"></td>
+                    <td></td>
+                    <td id="gradePoints4"></td>
+                </tr>
+                <tr>
+                    <td>Communication Skills</td>
+                    <td>2</td>
+                    <td><input type="number" id="marks7" min="0" max="100"></td>
+                    <td></td>
+                    <td id="gradePoints5"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="calculateCGPA()">Calculate CGPA</button>
+        <div class="result">
+            <h2>SGPA: <span id="sgpa"></span></h2>
+            <h2>CGPA: <span id="cgpa"></span></h2>
+            <p id="funnyMessage"></p>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
